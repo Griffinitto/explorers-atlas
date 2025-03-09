@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorer’s Atlas</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar: Stays & Eats -->
+        <div id="left-sidebar" class="sidebar left-sidebar">
+            <h2>Places to Stay & Eat</h2>
+            <button id="toggle-left">Toggle Sidebar</button>
+            <input type="text" id="search-left" placeholder="Search stays or eats...">
+            <h3>Top Stays</h3>
+            <div id="stay-content">Loading stays...</div>
+            <h3>Top Eats</h3>
+            <div id="eat-content">Loading eats...</div>
+        </div>
+
+        <!-- Map -->
+        <div id="map"></div>
+
+        <!-- Right Sidebar: Guides -->
+        <div id="right-sidebar" class="sidebar right-sidebar">
+            <h2>Tour Guides</h2>
+            <button id="toggle-right">Toggle Sidebar</button>
+            <input type="text" id="search-right" placeholder="Search tours...">
+            <h3>Top Tours</h3>
+            <div id="guide-content">Loading tours...</div>
+        </div>
+
+        <!-- Filtering Section -->
+        <div id="filters">
+            <h3>Filter Attractions</h3>
+            <label><input type="checkbox" value="Historical" checked> Historical</label>
+            <label><input type="checkbox" value="Entertainment" checked> Entertainment</label>
+            <label><input type="checkbox" value="Nature" checked> Nature</label>
+            <label><input type="checkbox" value="Art" checked> Art</label>
+            <label><input type="checkbox" value="Unique Places" checked> Unique Places</label>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="data/attractions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
